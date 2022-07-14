@@ -34,6 +34,7 @@
     }
     .assignment-table {
       border: 3px solid rgba(9, 9, 121, 1);
+      width: 80%;
     }
     tbody tr {
       border: 1px solid rgba(9, 9, 121, 1);
@@ -53,6 +54,14 @@
       border: 3px solid rgba(9, 9, 121, 1);
       width: 50%;
     }
+    .btn {
+      color: rgba(9, 9, 121, 1) !important;
+      border-color: rgba(9, 9, 121, 1) !important;
+    }
+    .btn:hover {
+      background-color: rgba(9, 9, 121, 1) !important;
+      color: #fff !important;
+    }
   </style>
   <body>
     <div class="container container-fluid text-center mt-5">
@@ -64,7 +73,7 @@
       class="container-fluid d-flex flex-row p-4 mt-3 main-content rounded shadow"
     >
       <div class="w-75 p-2">
-        <table class="table assignment-table table-hover">
+        <table class="table assignment-table table-hover mx-auto shadow">
           <thead>
             <tr>
               <th scope="col">#</th>
@@ -76,15 +85,45 @@
           <tbody>
             <tr>
               <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
+              <td>Pokemon Website</td>
+              <td>4th July, 2022</td>
+              <td>
+                <a
+                  target="_blank"
+                  href="/Assignment1/index.html"
+                  class="text-decoration-none"
+                  ><button class="btn btn-outline-primary">
+                    View Assignment
+                  </button></a
+                >
+                <a
+                  target="_blank"
+                  href="https://github.com/SohilK03/Nagarro-Assignments/blob/master/Assignment1/index.html"
+                  class="text-decoration-none"
+                  ><button class="btn btn-outline-primary">View Code</button></a
+                >
+              </td>
             </tr>
             <tr>
               <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
+              <td>Portfolio Website</td>
+              <td>5th July, 2022</td>
+              <td>
+                <a
+                  target="_blank"
+                  href="/Assignment2/index.html"
+                  class="text-decoration-none"
+                  ><button class="btn btn-outline-primary">
+                    View Assignment
+                  </button></a
+                >
+                <a
+                  target="_blank"
+                  href="https://github.com/SohilK03/Nagarro-Assignments/blob/master/Assignment2/index.html"
+                  class="text-decoration-none"
+                  ><button class="btn btn-outline-primary">View Code</button></a
+                >
+              </td>
             </tr>
           </tbody>
         </table>
