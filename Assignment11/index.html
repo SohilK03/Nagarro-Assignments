@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Slider</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript" src="./script.js"></script>
+  </head>
+  <style>
+    body {
+      background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+      background-attachment: fixed;
+    }
+    #slider {
+      display: flex;
+      justify-content: center;
+    }
+    #header {
+      text-align: center;
+    }
+    #right > button,
+    #left > button {
+      margin: 1rem;
+      font-size: 4rem;
+      border: none;
+      position: absolute;
+      top: 35%;
+      opacity: 50%;
+      height: 5rem;
+      width: 5rem;
+      border-radius: 50%;
+      background-color: black;
+      color: white;
+      transition: 0.5s;
+    }
+    #right > button {
+      left: 75%;
+    }
+    #left > button {
+      left: 18%;
+    }
+    #picture {
+      height: 410px;
+      box-shadow: 0 17px 18px 0 rgba(0, 0, 0, 0.2),
+        0 16px 30px 0 rgba(0, 0, 0, 0.19);
+    }
+    #right > button:hover,
+    #left > button:hover {
+      transition: 0.4s;
+      opacity: 100%;
+    }
+  </style>
+  <body onload="loadimg()">
+    <div class="container">
+      <div id="header">
+        <h1>IMAGE SLIDER</h1>
+      </div>
+      <div id="slider">
+        <div id="left">
+          <button type="button">&#60;</button>
+        </div>
+        <div id="picture">
+          <img id="pic" src="" height="410" width="550" />
+        </div>
+        <div id="right">
+          <button type="button">&#62;</button>
+        </div>
+      </div>
+      <!-- <div id="position">
+				<input type="range" min="0" max="100" step="33" value="0" id="index">
+			</div> -->
+    </div>
+  </body>
+</html>
