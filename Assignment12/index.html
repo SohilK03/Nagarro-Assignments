@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator Using jQuery</title>
+  </head>
+  <style>
+    body {
+      background-color: #ffffff;
+      background-image: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #6284ff 50%,
+        #ff0000 100%
+      );
+      background-attachment: fixed;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .outer-frame {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-height: 650px;
+      max-width: 400px;
+      width: 90%;
+      padding: 20px;
+
+      background-color: #b679fc;
+      border-radius: 10px;
+
+    }
+
+    .display-result {
+      background: #7400f8;
+      width: 100%;
+      height: 100px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      border: 5px solid #fff;
+      border-radius: 10px;
+    }
+
+    .input {
+      text-align: right;
+      /*overflow: hidden;*/
+      width: 80%;
+      height: 70px;
+      font-size: 2rem;
+    }
+
+    .value {
+      color: #fff;
+      font-size: 2rem;
+      width: 50px;
+      height: 50px;
+      flex: 1;
+      background-color: #7400f8;
+      border-radius: 10px;
+      border-color: #fff;
+    }
+
+    .flex-row {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .flex-row button {
+      margin-right: 0.2rem;
+    }
+    .enter {
+      background: rgb(48, 48, 94);
+    }
+    .clear {
+      background: rgb(48, 48, 94);
+    }
+    .flex-row .clear {
+      width: 1rem;
+      height: 3.1rem;
+      margin-left: 1rem;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="outer-frame">
+        <h3>CALCULATOR APP</h3>
+        <div class="display-result">
+          <div class="input">0</div>
+        </div>
+        <div class="flex-row">
+          <button class="value">7</button>
+          <button class="value">8</button>
+          <button class="value">9</button>
+          <button class="value">+</button>
+        </div>
+
+        <div class="flex-row">
+          <button class="value">4</button>
+          <button class="value">5</button>
+          <button class="value">6</button>
+          <button class="value">*</button>
+        </div>
+
+        <div class="flex-row">
+          <button class="value">1</button>
+          <button class="value">2</button>
+          <button class="value">3</button>
+          <button class="value">-</button>
+        </div>
+
+        <div class="flex-row">
+          <button class="value">.</button>
+          <button class="value">0</button>
+          <button class="value">/</button>
+        </div>
+        <div class="flex-row">
+          <button class="value enter">Enter</button>
+          <button class="value clear">C</button>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
